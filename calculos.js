@@ -1,44 +1,27 @@
 var formulario = document.getElementById("calcularPrecio");
 
-function calcular() {
-
-
-    var cantidad = document.getElementById("cantidad").value;
-    //alert("Variable Formulario:" + formulario + "Variable cantidad:" + cantidad);
- 
-         //var tamañoChico = document.getElementById("chico").value;
-    //alert(tamañoChico);
-
-        //var tamañoMediano = document.getElementById("mediano").value;
-    //alert(tamañoMediano);
-
-        //var tamañoGrande = document.getElementById("grande").value;
-    //alert(tamañoGrande);
-
-        var tamaño = formulario.tam.value
-        alert(tamaño);
-    
-        var pan = formulario.pan.value
-        alert(pan);
-
-        var combo = formulario.combo.value
-        alert(combo);
-
-
+function Calcular() {
+    var cantidad = formulario.cantidad.value;
+    var tamanio = formulario.tam.value;
+    var pan = formulario.pan.value;
 
     var total = 0;
 
-    if(tamaño == "chico"){
-        total = 100;}
-
-    if(tamaño == "mediano"){
-        total = 150;}
-
-    if(tamaño == "grande"){
-        total = 200;}
-     else {
-     alert("Por favor selecciona un tamaño");
-     return;
+    if(tamanio == "chico")
+    {
+        total = 100;
+    }
+    else if (tamanio == "mediano")
+    {
+        total = 150;
+    }
+    else if (tamanio == "grande")
+    {
+        total = 200;
+    }
+    else {
+        alert("Por favor selecciona un tamaño");
+        return;
     }
 
     if (pan == "integral")
@@ -63,14 +46,59 @@ function calcular() {
     }
 
 
-    if(formulario.combo.value == "si") {
-        total = total + 75;     }  
-                                
-    if(formulario.combo.value == "no") {
-        total = total ;     }
+    if (formulario.tomate.checked) 
+    {
+        total += 10;
+    }
 
+    if (formulario.cebolla.checked) 
+    {
+        total += 10;
+    }
 
-    formulario.total.value = total * cantidad;
+    if (formulario.aguacate.checked)  
+    {
+        total += 10;
+    }
 
+    if (formulario.jamon.checked) 
+    {
+        total += 10;
+    }
 
-}
+    if (formulario.tocino.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.pina.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.quesoBlanco.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.quesoAmarillo.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.champiñones.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.salami.checked) 
+    {
+        total += 10;
+    }
+
+    if (formulario.combo.value == "Si")
+    {
+        total += 75;
+    }
+    
+    formulario.total.value = total * cantidad;}
