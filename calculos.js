@@ -36,6 +36,31 @@ function calcular() {
 
     if(tamaño == "grande"){
         total = 200;}
+     else {
+     alert("Por favor selecciona un tamaño");
+     return;
+    }
+
+    if (pan == "integral")
+    {
+        total = total + 0;
+    }
+    else if (pan == "blanco")
+    {
+        total = total + 20;
+    }
+    else if(pan == "papa")
+    {
+        total = total + 50;
+    }
+    else if(pan == "parmesano")
+    {
+        total = total + 60;
+    }
+    else {
+        alert("Por favor selecciona un tipo de pan");
+        return;
+    }
 
 
     if(formulario.combo.value == "si") {
