@@ -1,0 +1,83 @@
+       body {
+        background-image: url(idaibrgr.png);
+        background-size: 300px;
+        background-repeat: repeat;
+        font-family: 'Roboto', sans-serif;
+        color: #000000;
+        text-align: center;
+        padding: 40px;
+        }
+
+
+        h1 {
+            text-align: center;
+            background: #d90429;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        form {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .caja {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background: #fafafa;
+        }
+
+        h2 {
+            background: #ef233c;
+            color: white;
+            padding: 8px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="number"], select {
+            margin-top: 5px;
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            background: #2b2d42;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1a1c2d;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        input[readonly] {
+            background: #eee;
+        }
