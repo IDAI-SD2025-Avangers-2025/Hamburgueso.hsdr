@@ -19,10 +19,7 @@ function Calcular() {
     {
         total = 200;
     }
-    else {
-        alert("Por favor selecciona un tamaño");
-        return;
-    }
+   
 
     if (pan == "integral")
     {
@@ -40,10 +37,7 @@ function Calcular() {
     {
         total = total + 60;
     }
-    else {
-        alert("Por favor selecciona un tipo de pan");
-        return;
-    }
+    
 
 
     if (formulario.tomate.checked) 
@@ -96,9 +90,11 @@ function Calcular() {
         total += 10;
     }
 
-    if (formulario.combo.value == "Si")
+    if (formulario.combo.value == "si")
     {
         total += 75;
     }
     
-    formulario.total.value = total * cantidad;}
+    
+    formulario.total.value = total * cantidad;
+}

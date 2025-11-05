@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburguesas IDAI</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,22 +14,22 @@
             <div class="cantidad">
                 <label for="cantidad">
                     Cantidad
-                    <input type="number" name="cantidad" id="cantidad" value="1" min="1">
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1" onchange="Calcular()">
                 </label>
             </div>
 
             <div class="tamanio">
                 <h2>Tamaño</h2>
                 <label for="chico">
-                    <input type="radio" name="tam" id="chico" value="chico">
+                    <input type="radio" name="tam" id="chico" value="chico" onclick="Calcular()">
                     Chico (100 MXN)
                 </label>
                 <label for="mediano">
-                    <input type="radio" name="tam" id="mediano" value="mediano">
+                    <input type="radio" name="tam" id="mediano" value="mediano" onclick="Calcular()">
                     Mediano (150 MXN)
                 </label>
                 <label for="grande">
-                    <input type="radio" name="tam" id="grande" value="grande">
+                    <input type="radio" name="tam" id="grande" value="grande" onclick="Calcular()">
                     Grande (200 MXN)
                 </label>
             </div>
@@ -38,19 +37,19 @@
             <div class="tipo-pan">
                 <h2>Tipo de Pan</h2>
                 <label for="integral">
-                    <input type="radio" name="pan" id="integral" value="integral">
+                    <input type="radio" name="pan" id="integral" value="integral" onclick="Calcular()">
                     Integral (0 MXN)
                 </label>
                 <label for="blanco">
-                    <input type="radio" name="pan" id="blanco" value="blanco">
+                    <input type="radio" name="pan" id="blanco" value="blanco" onclick="Calcular()">
                     Blanco (20 MXN)
                 </label>
                 <label for="papa">
-                    <input type="radio" name="pan" id="papa" value="papa">
+                    <input type="radio" name="pan" id="papa" value="papa" onclick="Calcular()">
                     Papa (50 MXN)
                 </label>
                 <label for="parmesano">
-                    <input type="radio" name="pan" id="parmesano" value="parmesano">
+                    <input type="radio" name="pan" id="parmesano" value="parmesano" onclick="Calcular()">
                     Parmesano (60 MXN)
                 </label>
             </div>
@@ -58,43 +57,43 @@
             <div class="ingredientes">
                 <h2>Ingredientes (10 MXN por adicional)</h2>
                 <label for="tomate">
-                    <input type="checkbox" name="tomate" id="tomate">
+                    <input type="checkbox" name="tomate" id="tomate" onclick="Calcular()">
                     Tomate
                 </label>
                 <label for="cebolla">
-                    <input type="checkbox" name="cebolla" id="cebolla">
+                    <input type="checkbox" name="cebolla" id="cebolla" onclick="Calcular()">
                     Cebolla 
                 </label>
                 <label for="aguacate">
-                    <input type="checkbox" name="aguacate" id="aguacate">
+                    <input type="checkbox" name="aguacate" id="aguacate" onclick="Calcular()">
                     Aguacate
                 </label>
                 <label for="jamon">
-                    <input type="checkbox" name="jamon" id="jamon">
+                    <input type="checkbox" name="jamon" id="jamon" onclick="Calcular()">
                     Jamón
                 </label>
                 <label for="tocino">
-                    <input type="checkbox" name="tocino" id="tocino">
+                    <input type="checkbox" name="tocino" id="tocino" onclick="Calcular()">
                     Tocino
                 </label>
                 <label for="pina">
-                    <input type="checkbox" name="pina" id="pina">
+                    <input type="checkbox" name="pina" id="pina" onclick="Calcular()">
                     Piña
                 </label>
                 <label for="quesoBlanco">
-                    <input type="checkbox" name="quesoBlanco" id="quesoBlanco">
+                    <input type="checkbox" name="quesoBlanco" id="quesoBlanco" onclick="Calcular()">
                     Queso Blanco
                 </label>
                 <label for="quesoAmarillo">
-                    <input type="checkbox" name="quesoAmarillo" id="quesoAmarillo">
+                    <input type="checkbox" name="quesoAmarillo" id="quesoAmarillo" onclick="Calcular()">
                     Queso Amarillo
                 </label>
                 <label for="champiniones">
-                    <input type="checkbox" name="champiñones" id="champiniones">
+                    <input type="checkbox" name="champiñones" id="champiniones" onclick="Calcular()">
                     Champiñones
                 </label>
                 <label for="salami">
-                    <input type="checkbox" name="salami" id="salami">
+                    <input type="checkbox" name="salami" id="salami" onclick="Calcular()">
                     Salami
                 </label>
             </div>
@@ -102,7 +101,7 @@
             <div class="combo">
                 <label for="combo">
                     ¿Quieres hacerlo combo, incluye Refresco y Papas (75 MXN) ?
-                    <select name="combo" id="combo">
+                    <select name="combo" id="combo" onchange="Calcular()">
                         <option value="no">No</option>
                         <option value="si">Sí</option>
                     </select>
